@@ -77,8 +77,11 @@ def settings():
         except ValueError:
             print("Input tidak valid, tolong masukkan angka.")
 
+name_for_username = input("Masukkan nama anda: ")
+username = generate_username(name_for_username)
 passwordLength = inputPasswordLength()
 settings()
 
 print("\nPassword yang sudah dibuat:")
 print(passgen(passwordLength))
+print(f"\nUsername yang sudah dibuat: {username}")
